@@ -4,7 +4,7 @@
     margin-top: 30px;
     margin-bottom: 15px;
     text-align: right;
-    background-color:$fondoTransparente;
+    background-color:transparent;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -34,7 +34,7 @@
     padding: 10px;
     text-align: center; 
     border:2px solid rgb(251, 251, 252);
-    background-color: $fondoTransparente; 
+    background-color: transparent; 
     font: {
         size: 9px;
         family: 'Archivo Black', sans-serif;
@@ -48,7 +48,7 @@
         text-align: center;  
         font: {
             size: 12px;
-            family:$fuentePrincipal;
+            family:'Montserrat', sans-serif;
         }   
     }
     
@@ -58,14 +58,14 @@
         text-align: center;
         font: {
             size: 12px;
-            family:$fuentePrincipal;
+            family:'Montserrat', sans-serif;
         }    
     }
     
     & .checkRelleno{
         color: white;
         margin: 2px;
-        font-family:$fuentePrincipal;
+        font-family:'Montserrat', sans-serif;
         width: 10px;
         height: 10px;    
     }     
@@ -76,7 +76,7 @@
     margin-top: 5px;
     font: {
         size: 10px;
-        family:$fuentePrincipal
+        family:'Montserrat', sans-serif;
     }
 }
 
@@ -89,11 +89,11 @@
 .botones input{
     margin: 1px;
     padding: 2px;
-    background-color: $fondoTransparente;
+    background-color: transparent;
     color:white;
     font: {
         size: 10px;
-        family:$fuentePrincipal;
+        family:'Montserrat', sans-serif;
     }    
 }
 
@@ -104,7 +104,7 @@
     margin:5px;
     margin-bottom: 15px;
     text-align: center;
-    font-family: $fuentePrincipal;    
+    font-family: 'Montserrat', sans-serif;    
 } 
 
 .cajaParrafo {
@@ -128,9 +128,10 @@
 
 /*ESTILOS ACERCA*/
 
-.container .row .parrafoAcerca p{
+.parrafoAcerca h4{
     color: rgb(250, 252, 252);
-    font-family: $fuentePrincipal; 
+    font-family: 'Montserrat', sans-serif; 
+   
 }
 
 @media (max-width:568px ) {
@@ -144,7 +145,7 @@
     margin: 5% 35% 5% 35%;         
     padding: 2% 10% 2% 10%; 
     font: {
-        family: $fuentePrincipal; 
+        family: 'Montserrat', sans-serif; 
         size: 17px;  
     }   
     border: 1px solid rgb(85, 107, 110);
@@ -168,13 +169,12 @@
     border: 5px solid #e1e9ee;
     text-align: center;
     font: {
-        family: $fuentePrincipal;
+        family:'Montserrat', sans-serif;
         size: 15px;
     }
         & span{
         color: rgb(165, 238, 243);
-        font-family: $fuentePrincipal;
-        text-decoration: none;
+        font-family:'Montserrat', sans-serif;
     }
 }
 /*ESTILOS PROTFOLIO*/
@@ -187,6 +187,6 @@
     color: rgb(165, 238, 243);
     font: {
         size: 95%;
-        family: $fuentePrincipal;
+        family:'Montserrat', sans-serif;
     }
 }

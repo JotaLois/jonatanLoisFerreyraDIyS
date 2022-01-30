@@ -1,8 +1,8 @@
 .botonMenu{
-    background-color: $fondoTransparente;
+    background-color: transparent;
     border: 1px solid rgb(85, 107, 110);
     border-radius: 5px;
-    font-family: $fuentePrincipal;    
+    font-family: 'Montserrat', sans-serif;    
 
         &:hover{
         background-color:rgb(3, 174, 180);
@@ -11,7 +11,10 @@
     }
 }
 
-.idioma {
-    font-family: $fuentePrincipal;
+.logo:hover{
+    transform: scale(1.2);
+}
 
+.idioma {
+    font-family: 'Montserrat', sans-serif;
 }
