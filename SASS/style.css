@@ -213,6 +213,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.tablaExperiencia .bordesTabla a {
+  text-decoration: none;
+}
+
 /*ESTILOS PROTFOLIO*/
 .fondoPantalla {
   background-image: url(../Imagenes/fondoPantallaVertical.jpg);
