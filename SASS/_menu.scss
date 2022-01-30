@@ -1,0 +1,17 @@
+.botonMenu{
+    background-color: $fondoTransparente;
+    border: 1px solid rgb(85, 107, 110);
+    border-radius: 5px;
+    font-family: $fuentePrincipal;    
+
+        &:hover{
+        background-color:rgb(3, 174, 180);
+        opacity: 100%;
+        border-radius: 5px;   
+    }
+}
+
+.idioma {
+    font-family: $fuentePrincipal;
+
+}

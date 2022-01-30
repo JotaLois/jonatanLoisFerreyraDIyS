@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../Imagenes/FONDOPANTALLA.jpg);
+  background-size: cover;
+}
+
+/*ESTILOS-INDEX*/
+#redesSociales {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: right;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#redesSociales a {
+  padding: 5px;
+  background-color: #f2f5f7;
+  opacity: 75%;
+  border-radius: 5px;
+}
+
+#redesSociales a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/*Formulario*/
+#contacto {
+  margin-top: 0px;
+  margin-bottom: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.campoContacto {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #fbfbfc;
+  background-color: transparent;
+  font-size: 9px;
+  font-family: 'Archivo Black', sans-serif;
+  height: 625px;
+  width: auto;
+}
+
+.campoContacto .camposRelleno {
+  padding: 1rem 3rem 1rem 3rem;
+  margin: 1px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.campoContacto textarea {
+  padding-top: 5px;
+  margin: 2px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.campoContacto .checkRelleno {
+  color: white;
+  margin: 2px;
+  font-family: 'Montserrat', sans-serif;
+  width: 10px;
+  height: 10px;
+}
+
+.checkbox {
+  color: white;
+  margin-top: 5px;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.botones input {
+  margin: 1px;
+  padding: 2px;
+  background-color: transparent;
+  color: white;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Texto*/
+.parrafo {
+  color: #f5f9fa;
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cajaParrafo {
+  background: -webkit-gradient(linear, left top, left bottom, from(#116b7a), to(transparent));
+  background: linear-gradient(#116b7a, transparent);
+  border-radius: 50px;
+}
+
+@media (min-width: 805px) {
+  .parrafo {
+    color: #f5f9fa;
+    padding: 5px;
+    margin: 5px;
+  }
+  .cajaParrafo {
+    -webkit-transform: translate(0px, -700px);
+            transform: translate(0px, -700px);
+    background: -webkit-gradient(linear, left top, left bottom, from(#116b7a), to(transparent));
+    background: linear-gradient(#116b7a, transparent);
+    border-radius: 50px;
+  }
+}
+
+/*ESTILOS ACERCA*/
+.container .row .parrafoAcerca p {
+  color: #fafcfc;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 568px) {
+  .parrafoAcerca {
+    text-align: center;
+  }
+}
+
+/*ESTILOS EXPERIENCIA*/
+.subtitulo {
+  color: #e2e9ee;
+  margin: 5% 35% 5% 35%;
+  padding: 2% 10% 2% 10%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  border: 1px solid #556b6e;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tablaExperiencia .bordesTabla {
+  border: 5px solid #e1e9ee;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  padding: 20px;
+  color: #e1e9ee;
+  text-align: center;
+}
+
+.tablaExperiencia .bordesTabla span {
+  color: #a5eef3;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+/*ESTILOS PROTFOLIO*/
+.fondoPantalla {
+  background-image: url(../Imagenes/fondoPantallaVertical.jpg);
+}
+
+.portfolioCopetes {
+  color: #a5eef3;
+  font-size: 95%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#piePagina {
+  color: #eff5f7;
+  text-align: center;
+  padding: 3px;
+  margin-bottom: 0;
+  margin-top: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  border-bottom: hidden;
+  border-top: 1px solid white;
+}
+
+.botonMenu {
+  background-color: transparent;
+  border: 1px solid #556b6e;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.botonMenu:hover {
+  background-color: #03aeb4;
+  opacity: 100%;
+  border-radius: 5px;
+}
+
+.idioma {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 600px) {
+  .subtitulo {
+    font-size: 30px;
+    padding: 5px 5px 5px 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: url(../Imagenes/fondoPantallaVertical.jpg);
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=style.css.map */

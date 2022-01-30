@@ -1,0 +1,192 @@
+/*ESTILOS-INDEX*/
+
+#redesSociales{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: right;
+    background-color:$fondoTransparente;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    a{    
+        padding: 5px;   
+        background-color: #f2f5f7;     
+        opacity: 75%;
+        border-radius: 5px;
+
+            &:hover{
+            transform: scale(1.2);
+        } 
+    } 
+}
+/*Formulario*/
+
+#contacto{
+    margin-top: 0px;
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.campoContacto{
+    padding: 10px;
+    text-align: center; 
+    border:2px solid rgb(251, 251, 252);
+    background-color: $fondoTransparente; 
+    font: {
+        size: 9px;
+        family: 'Archivo Black', sans-serif;
+    } 
+    height: 625px;  
+    width: auto;
+        
+    & .camposRelleno{
+        padding: 1rem 3rem 1rem 3rem;
+        margin: 1px;
+        text-align: center;  
+        font: {
+            size: 12px;
+            family:$fuentePrincipal;
+        }   
+    }
+    
+    & textarea{
+        padding-top: 5px;
+        margin: 2px;
+        text-align: center;
+        font: {
+            size: 12px;
+            family:$fuentePrincipal;
+        }    
+    }
+    
+    & .checkRelleno{
+        color: white;
+        margin: 2px;
+        font-family:$fuentePrincipal;
+        width: 10px;
+        height: 10px;    
+    }     
+ }
+
+.checkbox{
+    color: white;
+    margin-top: 5px;
+    font: {
+        size: 10px;
+        family:$fuentePrincipal
+    }
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botones input{
+    margin: 1px;
+    padding: 2px;
+    background-color: $fondoTransparente;
+    color:white;
+    font: {
+        size: 10px;
+        family:$fuentePrincipal;
+    }    
+}
+
+/*Texto*/
+.parrafo{
+    color: rgb(245, 249, 250);
+    padding: 5px;
+    margin:5px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: $fuentePrincipal;    
+} 
+
+.cajaParrafo {
+    background: linear-gradient(rgb(17, 107, 122),transparent);
+    border-radius: 50px;
+}
+
+@media (min-width:805px){
+    .parrafo {
+       color: rgb(245, 249, 250);
+       padding: 5px;
+       margin:5px;
+    }
+
+    .cajaParrafo {
+        transform: translate(0px, -700px);
+        background: linear-gradient(rgb(17, 107, 122),transparent);
+        border-radius: 50px;
+    }
+}
+
+/*ESTILOS ACERCA*/
+
+.container .row .parrafoAcerca p{
+    color: rgb(250, 252, 252);
+    font-family: $fuentePrincipal; 
+}
+
+@media (max-width:568px ) {
+    .parrafoAcerca{
+        text-align: center;
+    }    
+}
+/*ESTILOS EXPERIENCIA*/
+.subtitulo{
+    color:#e2e9ee;
+    margin: 5% 35% 5% 35%;         
+    padding: 2% 10% 2% 10%; 
+    font: {
+        family: $fuentePrincipal; 
+        size: 17px;  
+    }   
+    border: 1px solid rgb(85, 107, 110);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;          
+}
+
+@media(min-width:600px){
+    .subtitulo{
+        font-size: 30px;
+        padding: 5px 5px 5px 5px;
+    }
+}
+
+ .tablaExperiencia .bordesTabla{
+    color: #e1e9ee; 
+    padding: 20px;
+    border: 5px solid #e1e9ee;
+    text-align: center;
+    font: {
+        family: $fuentePrincipal;
+        size: 15px;
+    }
+        & span{
+        color: rgb(165, 238, 243);
+        font-family: $fuentePrincipal;
+        text-decoration: none;
+    }
+}
+/*ESTILOS PROTFOLIO*/
+
+.fondoPantalla{
+    background-image: url(../Imagenes/fondoPantallaVertical.jpg);
+}
+
+.portfolioCopetes{
+    color: rgb(165, 238, 243);
+    font: {
+        size: 95%;
+        family: $fuentePrincipal;
+    }
+}
