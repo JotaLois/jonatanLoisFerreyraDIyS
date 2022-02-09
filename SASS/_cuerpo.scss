@@ -1,7 +1,7 @@
 /*ESTILOS-INDEX*/
 
 #redesSociales{
-    margin-top: 30px;
+    margin-top: 110px;
     margin-bottom: 15px;
     text-align: right;
     background-color:transparent;
@@ -32,6 +32,8 @@
 
 .campoContacto{
     padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     text-align: center; 
     border:2px solid rgb(251, 251, 252);
     background-color: transparent; 
@@ -108,6 +110,8 @@
 } 
 
 .cajaParrafo {
+    margin-top: 50px;
+    margin-bottom: 10px;
     background: linear-gradient(rgb(17, 107, 122),transparent);
     border-radius: 50px;
 }
@@ -120,13 +124,20 @@
     }
 
     .cajaParrafo {
-        transform: translate(0px, -700px);
+        transform: translate(0px, -270px);
         background: linear-gradient(rgb(17, 107, 122),transparent);
         border-radius: 50px;
+    }
+    .textoFijo{
+        position: fixed;
     }
 }
 
 /*ESTILOS ACERCA*/
+
+.cuerpoAcerca {
+    height: 70vh;
+}
 
 .parrafoAcerca h4{
     color: rgb(250, 252, 252);

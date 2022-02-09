@@ -7,13 +7,13 @@
 }
 
 body{
-    background-image: url(../Imagenes/FONDOPANTALLA.jpg);
+    background-image: url(../Imagenes/FondoWeb.png);
     background-size: cover;    
 }
 
 @media (max-width:600px){
      body{
-        background-image: url(../Imagenes/fondoPantallaVertical.jpg);
+        background-image: url(../Imagenes/FondoWebVertical.png);
         background-size: cover;
     }
 }

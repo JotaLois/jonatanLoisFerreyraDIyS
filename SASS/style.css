@@ -7,20 +7,20 @@
 }
 
 body {
-  background-image: url(../Imagenes/FONDOPANTALLA.jpg);
+  background-image: url(../Imagenes/FondoWeb.png);
   background-size: cover;
 }
 
 @media (max-width: 600px) {
   body {
-    background-image: url(../Imagenes/fondoPantallaVertical.jpg);
+    background-image: url(../Imagenes/FondoWebVertical.png);
     background-size: cover;
   }
 }
 
 /*ESTILOS-INDEX*/
 #redesSociales {
-  margin-top: 30px;
+  margin-top: 110px;
   margin-bottom: 15px;
   text-align: right;
   background-color: transparent;
@@ -65,6 +65,8 @@ body {
 
 .campoContacto {
   padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   text-align: center;
   border: 2px solid #fbfbfc;
   background-color: transparent;
@@ -138,6 +140,8 @@ body {
 }
 
 .cajaParrafo {
+  margin-top: 50px;
+  margin-bottom: 10px;
   background: -webkit-gradient(linear, left top, left bottom, from(#116b7a), to(transparent));
   background: linear-gradient(#116b7a, transparent);
   border-radius: 50px;
@@ -150,15 +154,22 @@ body {
     margin: 5px;
   }
   .cajaParrafo {
-    -webkit-transform: translate(0px, -700px);
-            transform: translate(0px, -700px);
+    -webkit-transform: translate(0px, -270px);
+            transform: translate(0px, -270px);
     background: -webkit-gradient(linear, left top, left bottom, from(#116b7a), to(transparent));
     background: linear-gradient(#116b7a, transparent);
     border-radius: 50px;
   }
+  .textoFijo {
+    position: fixed;
+  }
 }
 
 /*ESTILOS ACERCA*/
+.cuerpoAcerca {
+  height: 70vh;
+}
+
 .parrafoAcerca h4 {
   color: #fafcfc;
   font-family: 'Montserrat', sans-serif;
@@ -257,6 +268,11 @@ body {
 .logo:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  border-radius: 5px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .idioma {
