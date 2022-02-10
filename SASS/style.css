@@ -140,14 +140,14 @@ body {
 }
 
 .cajaParrafo {
-  margin-top: 50px;
+  margin-top: 25px;
   margin-bottom: 10px;
   background: -webkit-gradient(linear, left top, left bottom, from(#116b7a), to(transparent));
   background: linear-gradient(#116b7a, transparent);
   border-radius: 50px;
 }
 
-@media (min-width: 805px) {
+@media (min-width: 1568px) {
   .parrafo {
     color: #f5f9fa;
     padding: 5px;
@@ -165,19 +165,72 @@ body {
   }
 }
 
+@media only screen and (min-width: 1440px) and (max-width: 1568px) {
+  .parrafo {
+    color: #f5f9fa;
+    padding: 5px;
+    margin: 5px;
+  }
+  .cajaParrafo {
+    -webkit-transform: translate(0px, -175px);
+            transform: translate(0px, -175px);
+    background: -webkit-gradient(linear, left top, left bottom, from(#116b7a), to(transparent));
+    background: linear-gradient(#116b7a, transparent);
+    border-radius: 50px;
+  }
+  .textoFijo {
+    position: fixed;
+  }
+}
+
 /*ESTILOS ACERCA*/
 .cuerpoAcerca {
-  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.cuerpoAcerca img {
+  margin-top: 20px;
 }
 
 .parrafoAcerca h4 {
+  margin-top: 20px;
+  padding: 10px;
   color: #fafcfc;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-@media (max-width: 568px) {
-  .parrafoAcerca {
-    text-align: center;
+@media (min-width: 1440px) {
+  .cuerpoAcerca {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .parrafoAcerca h4 {
+    padding: 5px;
+    margin: 0px 0px 0px 200px;
+    text-align: start;
   }
 }
 
@@ -206,7 +259,9 @@ body {
 @media (min-width: 600px) {
   .subtitulo {
     font-size: 30px;
-    padding: 5px 5px 5px 5px;
+    padding: 1%;
+    margin-left: 35%;
+    margin-right: 35%;
   }
 }
 
@@ -237,6 +292,14 @@ body {
   color: #a5eef3;
   font-size: 95%;
   font-family: 'Montserrat', sans-serif;
+}
+
+/*ESTILOS REEL*/
+@media (min-width: 1440px) {
+  .videoReel {
+    height: 75vh;
+    width: 75vh;
+  }
 }
 
 #piePagina {
@@ -273,6 +336,10 @@ body {
   transition: 0.25s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+}
+
+.lateralMenu {
+  margin-left: 50px;
 }
 
 .idioma {

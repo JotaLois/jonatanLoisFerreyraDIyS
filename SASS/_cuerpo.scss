@@ -110,13 +110,13 @@
 } 
 
 .cajaParrafo {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 10px;
     background: linear-gradient(rgb(17, 107, 122),transparent);
     border-radius: 50px;
 }
 
-@media (min-width:805px){
+@media (min-width:1568px){
     .parrafo {
        color: rgb(245, 249, 250);
        padding: 5px;
@@ -133,23 +133,61 @@
     }
 }
 
+@media only screen and (min-width: 1440px) and (max-width: 1568px){
+    .parrafo {
+       color: rgb(245, 249, 250);
+       padding: 5px;
+       margin:5px;
+    }
+
+    .cajaParrafo {
+        transform: translate(0px, -175px);
+        background: linear-gradient(rgb(17, 107, 122),transparent);
+        border-radius: 50px;
+    }
+    .textoFijo{
+        position: fixed;
+    }
+}
+
 /*ESTILOS ACERCA*/
 
-.cuerpoAcerca {
-    height: 70vh;
+.cuerpoAcerca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
-
+.cuerpoAcerca img{
+    margin-top:  20px;
+}
 .parrafoAcerca h4{
+    
+    margin-top: 20px;
+    padding: 10px;
     color: rgb(250, 252, 252);
     font-family: 'Montserrat', sans-serif; 
-   
+    text-align: center;
+}  
+
+@media (min-width:1440px ) {
+    .cuerpoAcerca {
+       display: flex;
+       flex-direction: row;
+       justify-content:center ;
+       margin-top:5%;
+       margin-bottom: 10%;
+       margin-left: 10%;
+       margin-right:10%;
+       
+    }
+    .parrafoAcerca h4{  
+        padding: 5px; 
+        margin: 0px 0px 0px 200px;
+        text-align: start;
+    }
 }
 
-@media (max-width:568px ) {
-    .parrafoAcerca{
-        text-align: center;
-    }    
-}
 /*ESTILOS EXPERIENCIA*/
 .subtitulo{
     color:#e2e9ee;
@@ -170,7 +208,9 @@
 @media(min-width:600px){
     .subtitulo{
         font-size: 30px;
-        padding: 5px 5px 5px 5px;
+        padding: 1%;
+        margin-left: 35%;
+        margin-right: 35%;
     }
 }
 
@@ -205,3 +245,12 @@
         family:'Montserrat', sans-serif;
     }
 }
+/*ESTILOS REEL*/
+@media (min-width:1440px ){
+    .videoReel {
+        height: 75vh;
+        width: 75vh;
+    }
+}
+    
+
