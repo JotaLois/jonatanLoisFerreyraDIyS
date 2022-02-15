@@ -157,12 +157,11 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
+        & img{
+            margin-top:  20px;
+        }
 }
-.cuerpoAcerca img{
-    margin-top:  20px;
-}
-.parrafoAcerca h4{
-    
+.parrafoAcerca h4{    
     margin-top: 20px;
     padding: 10px;
     color: rgb(250, 252, 252);
@@ -178,8 +177,7 @@
        margin-top:5%;
        margin-bottom: 10%;
        margin-left: 10%;
-       margin-right:10%;
-       
+       margin-right:10%;   
     }
     .parrafoAcerca h4{  
         padding: 5px; 
@@ -189,6 +187,33 @@
 }
 
 /*ESTILOS EXPERIENCIA*/
+
+.tablaExperiencia{
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "tabla";   
+        &{
+        grid-area: tabla;
+        }
+
+        & .bordesTabla{
+        border: 5px solid #e1e9ee;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        padding: 20px;
+        color: #e1e9ee;
+        text-align: center;
+        }
+        &.bordesTabla span{
+        color: rgb(165, 238, 243);
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
 .subtitulo{
     color:#e2e9ee;
     margin: 5% 35% 5% 35%;         
@@ -205,33 +230,48 @@
     justify-content: center;          
 }
 
-@media(min-width:600px){
-    .subtitulo{
-        font-size: 30px;
-        padding: 1%;
-        margin-left: 35%;
-        margin-right: 35%;
-    }
-}
+    @media(min-width:600px){
+        .subtitulo{
+            font-size: 30px;
+            padding: 1%;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
 
- .tablaExperiencia .bordesTabla{
-    color: #e1e9ee; 
-    padding: 20px;
-    border: 5px solid #e1e9ee;
-    text-align: center;
-    font: {
-        family:'Montserrat', sans-serif;
-        size: 15px;
-    }
-        & span{
-        color: rgb(165, 238, 243);
-        font-family:'Montserrat', sans-serif;
-    }
 
-    &  a {
-        text-decoration: none;
-    }
-}
+        .tablaExperiencia{
+            display:grid;
+            margin: 0;
+            grid-template-columns: 1fr 2fr 1fr ;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            ". tabla .";
+                & .tabla {
+                    grid-area: tabla;
+                }
+
+                & .bordesTabla{
+                    color: #e1e9ee; 
+                    padding: 20px;
+                    border: 5px solid #e1e9ee;
+                    text-align: center;
+                
+                    font: {
+                        family:'Montserrat', sans-serif;
+                        size: 15px;
+                    }
+                & span{
+                    color: rgb(165, 238, 243);
+                    font-family:'Montserrat', sans-serif;
+                }
+
+                &  a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }       
+             
 /*ESTILOS PROTFOLIO*/
 
 .fondoPantalla{
